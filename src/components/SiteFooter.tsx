@@ -8,8 +8,8 @@ export function SiteFooter() {
         <div>
           <Logo />
           <p className="mt-4 max-w-sm text-sm text-[var(--ink-muted)]">
-            A public room that teaches Rust. The path starts at a function named main and stays
-            through ownership, borrowing, and Result.
+            A public room that teaches Rust. The first page runs from a function named main through
+            Result. Further lessons cover traits, threads, and async.
           </p>
         </div>
         <div>
@@ -18,6 +18,11 @@ export function SiteFooter() {
             <li>
               <Link href="/" className="text-[var(--ink)] underline-offset-2 hover:underline">
                 Lessons
+              </Link>
+            </li>
+            <li>
+              <Link href="/further" className="text-[var(--ink)] underline-offset-2 hover:underline">
+                Further
               </Link>
             </li>
             <li>

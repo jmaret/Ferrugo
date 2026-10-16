@@ -1,13 +1,14 @@
 # Ferrugo
 
-A public room that teaches Rust. Lessons run from `fn main` through ownership, borrowing, and `Result`. Checks are graded in the browser. Try it opens the official Rust playground with that program.
+A public room that teaches Rust. The first page runs from `fn main` through ownership, borrowing, and `Result`. `/further` continues with traits, threads, and async. Checks are graded in the browser. Try it opens the official Rust playground with that program.
 
 The product name is Ferrugo.
 
 ## Layout
 
-- `src/app` — lessons, the language, vision, architecture, releases
-- `content/lessons.ts` — the curriculum
+- `src/app` — the short lessons, `/further`, the language, vision, architecture, releases
+- `content/lessons.ts` — the first page
+- `content/further.ts` — traits through async
 - `docs` — vision and architecture, rendered in summary on those pages
 - `public/hero-bg.jpg` — a rusted iron bridge
 

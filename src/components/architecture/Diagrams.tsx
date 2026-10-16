@@ -11,7 +11,7 @@ export function Diagrams() {
       </Figure>
       <Figure
         title="Logical"
-        label="Lesson data feeds the page. The page grades a check and builds a playground link. The documents feed the reading pages."
+        label="Lesson files feed two pages. Each page grades a check and builds a playground link. The documents feed the reading pages."
       >
         <LogicalDiagram />
       </Figure>
@@ -94,7 +94,7 @@ function ConceptualDiagram() {
     <svg viewBox="0 0 860 500" role="img" aria-label="Conceptual architecture" className="min-w-[760px]">
       <Marker id="arrow-c" />
       <Box x={330} y={16} w={200} h={78} title="Visitor" lines={["Reads, then answers"]} />
-      <Box x={20} y={160} w={240} h={100} title="Lessons" lines={["fn main through Result", "One program each"]} />
+      <Box x={20} y={160} w={240} h={100} title="Lessons" lines={["Start page and /further", "One program each"]} />
       <Box x={310} y={160} w={240} h={100} title="Checks" lines={["Answered on the page", "Graded in the browser"]} />
       <Box x={600} y={160} w={240} h={100} title="Documents" lines={["Vision, architecture", "Release notes"]} />
       <Box x={250} y={360} w={360} h={100} title="Rust playground" lines={["play.rust-lang.org", "Only after Try it"]} tone="accent" />
@@ -111,10 +111,10 @@ function LogicalDiagram() {
   return (
     <svg viewBox="0 0 860 520" role="img" aria-label="Logical architecture" className="min-w-[760px]">
       <Marker id="arrow-l" />
-      <Box x={20} y={20} w={250} h={96} title="content/lessons.ts" lines={["Chapter, program, checks"]} />
+      <Box x={20} y={20} w={250} h={96} title="Lesson files" lines={["lessons.ts, further.ts", "Chapter, program, checks"]} />
       <Box x={305} y={20} w={250} h={96} title="docs markdown" lines={["Summary section", "Three Mermaid views"]} />
       <Box x={590} y={20} w={246} h={96} title="package.json" lines={["Version chip", "CHANGELOG.md"]} />
-      <Box x={20} y={190} w={250} h={96} title="Lesson page" lines={["Explanation", "The program"]} />
+      <Box x={20} y={190} w={250} h={96} title="Lesson pages" lines={["/ the short path", "/further"]} />
       <Box x={305} y={190} w={250} h={96} title="Reading pages" lines={["/language", "/vision, /architecture"]} />
       <Box x={590} y={190} w={246} h={96} title="/releases" lines={["Full changelog"]} />
       <Box x={20} y={380} w={250} h={110} title="Check grader" lines={["Compares the choice", "Shows the explanation"]} tone="accent" />
@@ -150,7 +150,7 @@ function PhysicalDiagram() {
       <text x="380" y="84" fill="#5a6b76" fontSize="13" fontFamily="Source Sans 3, Arial, sans-serif">
         Where a check is graded
       </text>
-      <Box x={380} y={110} w={260} h={78} title="Lesson pages" lines={["Rendered at build"]} />
+      <Box x={380} y={110} w={260} h={78} title="Lesson pages" lines={["Start and /further"]} />
       <Box x={380} y={206} w={260} h={86} title="Checks" lines={["The answer stays here"]} tone="accent" />
       <Box x={380} y={310} w={260} h={70} title="Nothing stored" lines={["Refresh keeps the lessons"]} />
 
