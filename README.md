@@ -22,7 +22,9 @@ npm run dev
 
 ## Deploy
 
-`npm run build` writes a static site to `out/`. Vercel Hobby serves that export. The build command is `npm run build`. No environment variables.
+`npm run build` writes a static site to `out/`. GitHub Pages serves that export from `main` through `.github/workflows/pages.yml`. The Pages build sets `BASE_PATH=/Ferrugo`. A local build does not, so the dev server stays at `/`. No environment variables are required locally.
+
+The public site is https://jmaret.github.io/Ferrugo/.
 
 ## Docs
 

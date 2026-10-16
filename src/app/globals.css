@@ -41,7 +41,7 @@ body {
       rgba(246, 234, 216, 0.84) 86%,
       rgba(246, 234, 216, 0.22) 100%
     ),
-    url("/hero-bg.jpg");
+    var(--hero);
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -59,7 +59,7 @@ body {
         rgba(246, 234, 216, 0.86) 0%,
         rgba(236, 220, 196, 0.8) 100%
       ),
-      url("/hero-bg.jpg");
+      var(--hero);
     background-attachment: scroll;
   }
 }

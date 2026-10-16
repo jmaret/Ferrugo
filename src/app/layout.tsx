@@ -48,7 +48,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${display.variable} ${sans.variable} ${mono.variable} h-full`}>
+    <html
+      lang="en"
+      className={`${display.variable} ${sans.variable} ${mono.variable} h-full`}
+      style={{ ["--hero" as string]: `url("${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/hero-bg.jpg")` }}
+    >
       <body className="flex min-h-full flex-col font-[family-name:var(--font-sans)] antialiased">
         <div className="flex min-h-screen flex-col">
           <SiteHeader />

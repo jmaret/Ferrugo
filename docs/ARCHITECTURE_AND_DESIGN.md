@@ -74,7 +74,7 @@ flowchart LR
   browser -->|"Try it only"| play
 ```
 
-- The static host is Vercel Hobby, serving the Next.js export in `out/`. The export contains the pages, the fonts, the bridge photograph, and the icon. It does not contain a compiler.
+- The static host is GitHub Pages, serving the Next.js export in `out/` at `https://jmaret.github.io/Ferrugo/`. The project path is `BASE_PATH=/Ferrugo` in the Pages build. A local build leaves that path empty. The export contains the pages, the fonts, the bridge photograph, and the icon. It does not contain a compiler.
 - The browser downloads those files and grades checks in the tab. Answers are not sent to Ferrugo and are not stored.
 - `play.rust-lang.org` receives the snippet when the visitor opens Try it. That request is the visitor's, to the Rust project, not to a Ferrugo API.
 
@@ -93,7 +93,7 @@ The chrome matches AetherForge.
 
 | Decision | Choice | Why |
 | --- | --- | --- |
-| Site | Next.js static export | Zero cost, no server to keep |
+| Site | Next.js static export on GitHub Pages | Zero cost. The Pages workflow ships `out/` |
 | Checks | Graded in the browser | No account and no round trip |
 | Compiler | Official playground | A Rust compiler does not ship as a small file in the page |
 | Edition | Rust 2024, stable | The programs match current Rust |
@@ -105,4 +105,5 @@ The chrome matches AetherForge.
 
 ## Changelog
 
+- 2026-10-15 — The public host is GitHub Pages at `https://jmaret.github.io/Ferrugo/`.
 - 2026-10-15 — First room: static export, lessons, in-browser checks, playground links, three architecture views, and summary pages.
