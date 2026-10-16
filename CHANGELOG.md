@@ -1,5 +1,10 @@
 # Releases
 
+## 0.3.0 — 2026-10-15
+
+- A further page of eleven lessons: traits, generics, lifetimes, modules, iterators, closures, trait objects, threads, channels, shared state, and async futures.
+- The first page stays the short path through `Result`, and links onward. The version chip is v0.3.0.
+
 ## 0.2.0 — 2026-10-15
 
 - A page on the language: where Rust came from, how it compares with Python, JavaScript, and Java, why someone chooses it, and where it has a following.

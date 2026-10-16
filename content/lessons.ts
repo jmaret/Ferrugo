@@ -22,7 +22,7 @@ export type Lesson = {
   checks: Check[];
 };
 
-function rust(code: string): string {
+export function rust(code: string): string {
   const lines = code.replace(/^\n/, "").replace(/\n\s*$/, "").split("\n");
   const pad = lines
     .filter((line) => line.trim().length > 0)
@@ -591,10 +591,10 @@ export function chapterId(chapter: string): string {
     .replace(/(^-|-$)/g, "");
 }
 
-export function lessonsByChapter(): { chapter: string; lessons: Lesson[] }[] {
+export function lessonsByChapter(source: Lesson[] = lessons): { chapter: string; lessons: Lesson[] }[] {
   const order: string[] = [];
   const groups = new Map<string, Lesson[]>();
-  for (const lesson of lessons) {
+  for (const lesson of source) {
     const group = groups.get(lesson.chapter);
     if (group) {
       group.push(lesson);

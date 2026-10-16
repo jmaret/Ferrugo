@@ -10,7 +10,7 @@ export default function NotFound() {
         <p className="eyebrow">Missing page</p>
         <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl tracking-tight">That page is not on the span</h1>
         <p className="mt-4 max-w-xl text-[var(--ink-muted)]">
-          The lessons, the language page, the vision, the architecture, and the release notes are still here.
+          The lessons, the further page, the language page, the vision, the architecture, and the release notes are still here.
         </p>
         <Link href="/" className="btn-accent mt-6">
           Back to the lessons

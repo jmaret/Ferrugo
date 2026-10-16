@@ -6,23 +6,21 @@
 
 ## Summary
 
-Ferrugo is a public room that teaches Rust. A visitor can read where the language came from, how it sits beside Python, JavaScript, and Java, and why engineers reach for it. The lessons then start with the shape of a tiny program, teach the syntax that writes it, and meet ownership, borrowing, and `Result`.
+Ferrugo is a public room that teaches Rust. A visitor can read where the language came from, how it sits beside Python, JavaScript, and Java, and why engineers reach for it. The first page is a short path: the shape of a tiny program, the syntax that writes it, and ownership, borrowing, and `Result`. `/further` continues on its own page with traits, generics, lifetimes, modules, iterators, closures, threads, and async.
 
 Checks are graded in the browser. A program is compiled only when the visitor chooses Try it, and then on the official Rust playground. This site does not run a compiler and does not keep an account.
-
-This release walks thirteen lessons in four groups: a small program, syntax, data, and the Rust idea. Traits, generics, lifetimes, modules, concurrency, and async come later.
 
 The name of the product is Ferrugo.
 
 ## Vision
 
-Ferrugo teaches Rust by a short path. The first lessons are the shape of a program: `fn main`, `println!`, and the Cargo directory. The next lessons are the syntax that fills that shape. The last lessons are the ideas that make Rust Rust: ownership, borrowing, and `Result`.
+Ferrugo teaches Rust by a short path, then a second page. The first lessons are the shape of a program: `fn main`, `println!`, and the Cargo directory. The next lessons are the syntax that fills that shape. The last lessons on that page are the ideas that make Rust Rust: ownership, borrowing, and `Result`. `/further` is the later path: traits through async, so the first page does not keep growing.
 
 The room is free to open. Nothing the visitor answers is stored. The compiler stays on [play.rust-lang.org](https://play.rust-lang.org), and a program is sent there only when the visitor chooses Try it.
 
 ## Users
 
-- **Visitor** — reads where the language came from, then a lesson, answers its checks, and may open the same program in the playground.
+- **Visitor** — reads where the language came from, then a lesson on the first page or on `/further`, answers its checks, and may open the same program in the playground.
 - **Builder** — ships the static site and keeps the lessons and these documents together.
 
 ## Principles
@@ -37,7 +35,8 @@ The room is free to open. Nothing the visitor answers is stored. The compiler st
 ## In scope
 
 - `/language` explains the origins of Rust, how it compares with Python, JavaScript, and Java, why someone chooses it, and where it has a following.
-- Thirteen lessons: `fn main`, `println!`, the Cargo shape, `let` and `mut`, a few types, functions, `if` and loops, structs and methods, enums and `match`, `Vec` and `String`, ownership and moves, references and borrowing, `Option`, `Result`, and `?`.
+- Thirteen lessons on `/`: `fn main`, `println!`, the Cargo shape, `let` and `mut`, a few types, functions, `if` and loops, structs and methods, enums and `match`, `Vec` and `String`, ownership and moves, references and borrowing, `Option`, `Result`, and `?`.
+- Eleven lessons on `/further`: traits, generics, lifetimes, modules, iterators, closures, trait objects, threads, channels, `Arc` and `Mutex`, and async futures.
 - One or two checks on each lesson, graded in the browser.
 - Try it opens the official playground with that lesson's program, Rust 2024, stable.
 - `/vision` renders the Summary of this document.
@@ -49,7 +48,7 @@ The room is free to open. Nothing the visitor answers is stored. The compiler st
 
 - Hosting `rustc`, Cargo, or a playground of our own.
 - Accounts, saved answers, or progress that survives a refresh.
-- Traits, generics, lifetimes, modules, concurrency, and async.
+- Writing macros, `unsafe`, and hosting an async executor. The async lesson shows that a future is a value. It does not run one.
 - An AetherForge catalog entry, until that is asked for.
 - A custom domain.
 
@@ -68,12 +67,14 @@ The room is free to open. Nothing the visitor answers is stored. The compiler st
 | V-9 | A code change updates this document, the architecture document, and `CHANGELOG.md` together | Met |
 | V-10 | The product name is Ferrugo alone | Met |
 | V-11 | `/language` covers origins, comparisons with Python, JavaScript, and Java, why someone chooses Rust, and where it has a following | Met |
+| V-12 | `/further` teaches traits through async, on a page of its own, with the same checks and Try it | Met |
 
 ## Acceptance
 
-A visitor can read the language page, open a lesson, answer a check, see whether it was right, and open Try it on the official playground. The visitor can read the vision summary, the three architecture pictures, and the release notes from the version chip. The page does not ask for a sign-in, and a check does not leave the browser.
+A visitor can read the language page, open a lesson on the first page or on `/further`, answer a check, see whether it was right, and open Try it on the official playground. The visitor can read the vision summary, the three architecture pictures, and the release notes from the version chip. The page does not ask for a sign-in, and a check does not leave the browser.
 
 ## Changelog
 
+- 2026-10-15 — `/further` adds eleven lessons, from traits through async, so the first page stays the short path.
 - 2026-10-15 — `/language` adds origins, comparisons, reasons to choose Rust, and where it is used.
 - 2026-10-15 — First room: thirteen lessons, checks, Try it, vision, architecture drawings, and release notes.
