@@ -23,9 +23,9 @@ npm run dev
 
 ## Deploy
 
-`npm run build` writes a static site to `out/`. GitHub Pages serves that export from `main` through `.github/workflows/pages.yml`. The Pages build sets `BASE_PATH=/Ferrugo`. A local build does not, so the dev server stays at `/`. No environment variables are required locally.
+`npm run build` writes a static site to `out/`. GitHub Pages serves that export from `main` through `.github/workflows/pages.yml`. The custom domain is the site root, so the Pages build does not set `BASE_PATH`. A local build does not either. `public/CNAME` keeps `ferrugo.aathira-services.com` on each deploy.
 
-The public site is https://jmaret.github.io/Ferrugo/.
+The public site is https://ferrugo.aathira-services.com/.
 
 ## Docs
 

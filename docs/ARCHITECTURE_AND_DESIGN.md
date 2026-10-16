@@ -10,7 +10,7 @@ Ferrugo is a static Next.js site. The short path lives in `content/lessons.ts` a
 
 `/language` is a reading page: origins, comparisons, reasons to choose the language, and where it is used. `/vision` and `/architecture` read the Summary section of the two documents at build time. `/releases` renders `CHANGELOG.md`. The header chip reads the version from `package.json`.
 
-Hosting is a free static export. There is no database and no paid API. The pictures on the architecture page are the conceptual, logical, and physical views. The Mermaid diagrams later in this document are the same three views, and they change together.
+Hosting is a free static export on GitHub Pages at [ferrugo.aathira-services.com](https://ferrugo.aathira-services.com/). The domain serves the files from its root, so the build does not prefix assets with `/Ferrugo`. There is no database and no paid API. The pictures on the architecture page are the conceptual, logical, and physical views. The Mermaid diagrams later in this document are the same three views, and they change together.
 
 ## Conceptual
 
@@ -76,7 +76,7 @@ flowchart LR
   browser -->|"Try it only"| play
 ```
 
-- The static host is GitHub Pages, serving the Next.js export in `out/` at `https://jmaret.github.io/Ferrugo/`. The project path is `BASE_PATH=/Ferrugo` in the Pages build. A local build leaves that path empty. The export contains the pages, the fonts, the bridge photograph, and the icon. It does not contain a compiler.
+- The static host is GitHub Pages. The public address is `https://ferrugo.aathira-services.com/`. A custom domain is served from the root, so the Pages build leaves `BASE_PATH` empty and styles, scripts, and pictures load from `/`. `public/CNAME` keeps that domain on each deploy. A local build also leaves the path empty. The export contains the pages, the fonts, the bridge photograph, and the icon. It does not contain a compiler.
 - The browser downloads those files and grades checks in the tab. Answers are not sent to Ferrugo and are not stored.
 - `play.rust-lang.org` receives the snippet when the visitor opens Try it. That request is the visitor's, to the Rust project, not to a Ferrugo API.
 
@@ -95,7 +95,7 @@ The chrome matches AetherForge.
 
 | Decision | Choice | Why |
 | --- | --- | --- |
-| Site | Next.js static export on GitHub Pages | Zero cost. The Pages workflow ships `out/` |
+| Site | Next.js static export on GitHub Pages | Zero cost. The Pages workflow ships `out/` to `ferrugo.aathira-services.com` at the domain root |
 | Checks | Graded in the browser | No account and no round trip |
 | Compiler | Official playground | A Rust compiler does not ship as a small file in the page |
 | Edition | Rust 2024, stable | The programs match current Rust |
@@ -107,6 +107,7 @@ The chrome matches AetherForge.
 
 ## Changelog
 
+- 2026-10-15 — The public address is `https://ferrugo.aathira-services.com/`. Assets load from the domain root.
 - 2026-10-15 — `/further` is a second lesson page. The logical picture shows both lesson files feeding `/` and `/further`.
 - 2026-10-15 — `/language` is a reading page. The logical picture lists it with the other reading pages.
 - 2026-10-15 — The public host is GitHub Pages at `https://jmaret.github.io/Ferrugo/`.

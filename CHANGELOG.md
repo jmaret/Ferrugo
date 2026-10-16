@@ -1,5 +1,10 @@
 # Releases
 
+## 0.3.1 — 2026-10-15
+
+- Styles, fonts, and the bridge photograph load on `https://ferrugo.aathira-services.com/`. The Pages build no longer prefixes files with `/Ferrugo`.
+- The version chip is v0.3.1.
+
 ## 0.3.0 — 2026-10-15
 
 - A further page of eleven lessons: traits, generics, lifetimes, modules, iterators, closures, trait objects, threads, channels, shared state, and async futures.

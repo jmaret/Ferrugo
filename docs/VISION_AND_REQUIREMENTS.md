@@ -43,6 +43,7 @@ The room is free to open. Nothing the visitor answers is stored. The compiler st
 - `/architecture` draws the conceptual, logical, and physical views, then renders the architecture Summary.
 - `/releases` renders `CHANGELOG.md`. The header version chip links there and shows the package version.
 - A rusted iron bridge behind the pages, with the AetherForge paper wash so the type stays readable.
+- The public site is `https://ferrugo.aathira-services.com/`, served from the domain root so the stylesheet and the bridge photograph load.
 
 ## Out of scope
 
@@ -50,7 +51,6 @@ The room is free to open. Nothing the visitor answers is stored. The compiler st
 - Accounts, saved answers, or progress that survives a refresh.
 - Writing macros, `unsafe`, and hosting an async executor. The async lesson shows that a future is a value. It does not run one.
 - An AetherForge catalog entry, until that is asked for.
-- A custom domain.
 
 ## Requirements
 
@@ -68,6 +68,7 @@ The room is free to open. Nothing the visitor answers is stored. The compiler st
 | V-10 | The product name is Ferrugo alone | Met |
 | V-11 | `/language` covers origins, comparisons with Python, JavaScript, and Java, why someone chooses Rust, and where it has a following | Met |
 | V-12 | `/further` teaches traits through async, on a page of its own, with the same checks and Try it | Met |
+| V-13 | The public site is `https://ferrugo.aathira-services.com/`, and styles load from the domain root | Met |
 
 ## Acceptance
 
@@ -75,6 +76,7 @@ A visitor can read the language page, open a lesson on the first page or on `/fu
 
 ## Changelog
 
+- 2026-10-15 — The public site is `https://ferrugo.aathira-services.com/`. Styles and pictures load from the domain root.
 - 2026-10-15 — `/further` adds eleven lessons, from traits through async, so the first page stays the short path.
 - 2026-10-15 — `/language` adds origins, comparisons, reasons to choose Rust, and where it is used.
 - 2026-10-15 — First room: thirteen lessons, checks, Try it, vision, architecture drawings, and release notes.

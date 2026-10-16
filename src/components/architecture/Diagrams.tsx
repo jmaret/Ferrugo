@@ -137,7 +137,7 @@ function PhysicalDiagram() {
         Static host
       </text>
       <text x="36" y="84" fill="#5a6b76" fontSize="13" fontFamily="Source Sans 3, Arial, sans-serif">
-        GitHub Pages
+        ferrugo.aathira-services.com
       </text>
       <Box x={36} y={110} w={260} h={78} title="HTML, CSS, JS" lines={["Next.js static export"]} />
       <Box x={36} y={206} w={260} h={78} title="hero-bg.jpg" lines={["Rusted iron bridge"]} />
