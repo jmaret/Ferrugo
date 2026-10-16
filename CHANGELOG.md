@@ -1,5 +1,10 @@
 # Releases
 
+## 0.2.0 — 2026-10-15
+
+- A page on the language: where Rust came from, how it compares with Python, JavaScript, and Java, why someone chooses it, and where it has a following.
+- The header links to that page. The version chip is v0.2.0.
+
 ## 0.1.0 — 2026-10-15
 
 - First room. Thirteen lessons run from `fn main` through ownership, borrowing, and `Result`.

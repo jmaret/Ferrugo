@@ -21,6 +21,11 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
+              <Link href="/language" className="text-[var(--ink)] underline-offset-2 hover:underline">
+                The language
+              </Link>
+            </li>
+            <li>
               <Link href="/vision" className="text-[var(--ink)] underline-offset-2 hover:underline">
                 Vision
               </Link>

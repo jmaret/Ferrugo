@@ -20,6 +20,9 @@ export default function HomePage() {
           <a href="#main" className="btn-accent">
             Start with main
           </a>
+          <Link href="/language" className="btn-ghost">
+            The language
+          </Link>
           <Link href="/vision" className="btn-ghost">
             Read the vision
           </Link>

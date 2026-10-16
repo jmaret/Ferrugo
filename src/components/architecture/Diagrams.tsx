@@ -115,7 +115,7 @@ function LogicalDiagram() {
       <Box x={305} y={20} w={250} h={96} title="docs markdown" lines={["Summary section", "Three Mermaid views"]} />
       <Box x={590} y={20} w={246} h={96} title="package.json" lines={["Version chip", "CHANGELOG.md"]} />
       <Box x={20} y={190} w={250} h={96} title="Lesson page" lines={["Explanation", "The program"]} />
-      <Box x={305} y={190} w={250} h={96} title="Reading pages" lines={["/vision", "/architecture"]} />
+      <Box x={305} y={190} w={250} h={96} title="Reading pages" lines={["/language", "/vision, /architecture"]} />
       <Box x={590} y={190} w={246} h={96} title="/releases" lines={["Full changelog"]} />
       <Box x={20} y={380} w={250} h={110} title="Check grader" lines={["Compares the choice", "Shows the explanation"]} tone="accent" />
       <Box x={340} y={380} w={280} h={110} title="Playground link" lines={["Edition 2024", "The same snippet"]} tone="accent" />

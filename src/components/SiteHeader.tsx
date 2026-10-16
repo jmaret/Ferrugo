@@ -7,6 +7,7 @@ import { Logo } from "./Logo";
 
 const nav = [
   { href: "/", label: "Lessons" },
+  { href: "/language", label: "The language" },
   { href: "/vision", label: "Vision" },
   { href: "/architecture", label: "Architecture" },
 ];

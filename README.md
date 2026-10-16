@@ -6,7 +6,7 @@ The product name is Ferrugo.
 
 ## Layout
 
-- `src/app` — lessons, vision, architecture, releases
+- `src/app` — lessons, the language, vision, architecture, releases
 - `content/lessons.ts` — the curriculum
 - `docs` — vision and architecture, rendered in summary on those pages
 - `public/hero-bg.jpg` — a rusted iron bridge

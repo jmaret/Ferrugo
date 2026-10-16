@@ -8,7 +8,7 @@
 
 Ferrugo is a static Next.js site. Lessons live in `content/lessons.ts`. The browser compares a chosen answer with the lesson's answer and shows the explanation. Try it builds a link to the official Rust playground and does not compile anything here.
 
-`/vision` and `/architecture` read the Summary section of the two documents at build time. `/releases` renders `CHANGELOG.md`. The header chip reads the version from `package.json`.
+`/language` is a reading page: origins, comparisons, reasons to choose the language, and where it is used. `/vision` and `/architecture` read the Summary section of the two documents at build time. `/releases` renders `CHANGELOG.md`. The header chip reads the version from `package.json`.
 
 Hosting is a free static export. There is no database and no paid API. The pictures on the architecture page are the conceptual, logical, and physical views. The Mermaid diagrams later in this document are the same three views, and they change together.
 
@@ -30,7 +30,7 @@ flowchart LR
   lessons -->|"Try it"| playground
 ```
 
-Lessons are the thirteen programs, ordered from `fn main` through `Result`. Checks are questions about those programs. Documents are the vision, the architecture, and the release notes. The playground compiles a program only after the visitor chooses Try it.
+Lessons are the thirteen programs, ordered from `fn main` through `Result`. Checks are questions about those programs. Documents are the vision, the architecture, and the release notes. `/language` is a reading page beside them, written in the page itself rather than in those files. The playground compiles a program only after the visitor chooses Try it.
 
 ## Logical
 
@@ -56,6 +56,7 @@ flowchart TD
 ```
 
 - `content/lessons.ts` holds the chapter, the explanation, the program, the notice, and the checks. The answer id stays with the check. The page compares the chosen option with that id.
+- `src/app/language/page.tsx` is the reading page on origins, comparisons, and use. It does not grade a check and it does not call the playground.
 - `src/lib/docs.ts` reads a file at build time and returns the body of `## Summary`. The vision and architecture pages render that body. They do not keep a second copy.
 - `src/lib/playground.ts` builds `https://play.rust-lang.org/` with `version=stable`, `mode=debug`, `edition=2024`, and the lesson program.
 - `package.json` version is the header chip. `CHANGELOG.md` is the releases page.
@@ -105,5 +106,6 @@ The chrome matches AetherForge.
 
 ## Changelog
 
+- 2026-10-15 — `/language` is a reading page. The logical picture lists it with the other reading pages.
 - 2026-10-15 — The public host is GitHub Pages at `https://jmaret.github.io/Ferrugo/`.
 - 2026-10-15 — First room: static export, lessons, in-browser checks, playground links, three architecture views, and summary pages.
